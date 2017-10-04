@@ -18,12 +18,12 @@ class MicropostsController < ApplicationController
   end
 
   # GET /microposts/1/edit
-  def edit
-  end
+  #def edit
+  #end
 
   # POST /microposts
   # POST /microposts.json
-  def create
+  #def create
     @micropost = Micropost.new(micropost_params)
 
     respond_to do |format|
@@ -35,7 +35,7 @@ class MicropostsController < ApplicationController
         format.json { render json: @micropost.errors, status: :unprocessable_entity }
       end
     end
-  end
+  #end
 
   # PATCH/PUT /microposts/1
   # PATCH/PUT /microposts/1.json
